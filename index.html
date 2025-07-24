@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página Personal</title>
+  <style>
+    header {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .foto-cedula {
+      width: 150px;     /* Ancho fijo */
+      height: 150px;    /* Alto igual al ancho para que sea cuadrada */
+      object-fit: cover; /* Corta la imagen para que se vea bien centrada */
+      border-radius: 10px; /* Esquinas un poco redondeadas */
+    }
+    /*  MEDIA QUERY: para pantallas pequeñas (celulares) */
+    @media (max-width: 600px) {
+      .foto-cedula {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+    <header>
+     <div class="header">
+         <img src="Imagenes/foto1.jpg.jpeg" alt="Foto tipo celula" class="foto-cedula">
+        <h1>Soy estudiante de 6to. Contenido Digital</h1>
+        <p>Conóceme un poco más sobre mi</p>
+      </div>
+    </header>
+
+
+
+  <section>
+    <h2 >Sobre mí</h2>
+    <p>Hola, soy <strong>Sharon Karolina Arroyo Lopez</strong>, una persona apasionada por aprender cosas nuevas y compartir lo que sé.</p>
+    
+  </section>
+
+  <section>
+    <h2>Mis Intereses</h2>
+    <ul>
+      <li>🎧 La música</li>
+      <li>📝 La lectura</li>
+      <li>💻 La tecnología</li>
+      <li>🌐 Viajar</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Adaptabilidad al cambio</li>
+      <li>Comunicación efectiva</li>
+      <li>Uso de herramientas tecnologicas</li>
+      <li>Empatia y autodidacta</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Video que me interesa</h2>
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/ImOR0o-QHOQ"
+      title="Video que me representa"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section>
+    <h2>Contáctame</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  
+
+  <footer>
+  <img src="Imagenes/imagen4.jpeg" alt="Logo Personal" class="logo-footer">
+  <div class="autor">© 2025 Sharon Arroyo. Todos los derechos reservados.</div>
+</footer>
+<link rel="stylesheet" href="Estilos.css">
+
+</body>
+</html>
